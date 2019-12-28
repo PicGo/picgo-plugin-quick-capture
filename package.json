@@ -1,6 +1,6 @@
 {
   "name": "picgo-plugin-quick-capture",
-  "version": "0.0.1",
+  "version": "1.0.0-alpha.0",
   "description": "A quick capture screenshot plugin for PicGo",
   "main": "dist/index.js",
   "publishConfig": {
@@ -29,7 +29,9 @@
     }
   },
   "commitlint": {
-    "extends": ["./node_modules/@picgo/bump-version/commitlint-picgo"]
+    "extends": [
+      "./node_modules/@picgo/bump-version/commitlint-picgo"
+    ]
   },
   "keywords": [
     "picgo",
