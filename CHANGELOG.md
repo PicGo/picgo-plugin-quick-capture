@@ -1,3 +1,12 @@
+# :tada: 1.0.0-alpha.2 (2019-12-28)
+
+
+### :pencil: Documentation
+
+* add homepage && badges ([e603925](https://github.com/PicGo/picgo-plugin-quick-capture/commit/e603925))
+
+
+
 # :tada: 1.0.0-alpha.1 (2019-12-28)
 
 
