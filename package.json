@@ -1,0 +1,61 @@
+{
+  "name": "picgo-plugin-quick-capture",
+  "version": "1.0.0",
+  "description": "A quick capture screenshot plugin for PicGo",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p . && npm run copy",
+    "dev": "tsc -w -p .",
+    "copy": "copyfiles -f src/PrScrn.dll dist/",
+    "cz": "git-cz",
+    "release": "bump-version"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./node_modules/@picgo/bump-version/.cz-config.js"
+    }
+  },
+  "commitlint": {
+    "extends": ["./node_modules/@picgo/bump-version/commitlint-picgo"]
+  },
+  "keywords": [
+    "picgo",
+    "picgo-gui-plugin",
+    "picgo-plugin"
+  ],
+  "author": "Molunerfinn",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@picgo/bump-version": "^1.0.3",
+    "@types/node": "^10.10.1",
+    "commitizen": "^4.0.3",
+    "conventional-changelog": "^3.1.18",
+    "copyfiles": "^2.1.1",
+    "cz-customizable": "^6.2.0",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "husky": "^3.1.0",
+    "picgo": "^1.4.0",
+    "tslint": "^5.10.0",
+    "tslint-config-standard": "^7.1.0",
+    "typescript": "^3.7.3"
+  }
+}
