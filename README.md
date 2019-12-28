@@ -1,6 +1,8 @@
 ## picgo-plugin-quick-capture
 
 [![PicGo Convention](https://img.shields.io/badge/picgo-convention-blue.svg?style=flat-square)](https://github.com/PicGo/bump-version)
+[![PicGo](https://img.shields.io/badge/picgo-%3E%3D2.2.0-blue?style=flat-square)](https://github.com/Molunerfinn/PicGo)
+[![latest release](https://img.shields.io/github/package-json/v/PicGo/picgo-plugin-quick-capture.svg?style=flat-square)](https://github.com/PicGo/picgo-plugin-quick-capture/releases/latest)
 
 [中文说明](https://github.com/PicGo/picgo-plugin-quick-capture/blob/dev/README_CN.md)
 
