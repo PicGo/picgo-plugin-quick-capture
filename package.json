@@ -1,6 +1,6 @@
 {
   "name": "picgo-plugin-quick-capture",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A quick capture screenshot plugin for PicGo",
   "main": "dist/index.js",
   "publishConfig": {
