@@ -16,14 +16,14 @@ const config = (ctx: picgo): PluginConfig[] => {
     {
       name: 'win32',
       type: 'input',
-      alias: 'Windows截图脚本',
+      alias: 'Win截图脚本',
       default: userConfig.win32 || defaultScript.win32,
       required: process.platform === 'win32'
     },
     {
       name: 'darwin',
       type: 'input',
-      alias: 'MacOS截图脚本',
+      alias: 'Mac截图脚本',
       default: userConfig.darwin || defaultScript.darwin,
       required: process.platform === 'darwin'
     },
@@ -58,6 +58,12 @@ export = (ctx: picgo) => {
       try {
         const platform = process.platform
         const script: string = ctx.getConfig(`picgo-plugin-quick-capture.${platform}`) || defaultScript[platform]
+        if (!script) {
+          return guiApi.showNotification({
+            title: '快速截图上传脚本出错',
+            body: '不能为空'
+          })
+        }
         const command = script.split(' ')[0]
         const args = script.split(' ').slice(1)
         const io = spawn(command, args)
