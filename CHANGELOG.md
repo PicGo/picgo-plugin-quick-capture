@@ -1,3 +1,12 @@
+# :tada: 1.0.0-alpha.1 (2019-12-28)
+
+
+### :package: Chore
+
+* fix github action ([af7f6ba](https://github.com/PicGo/picgo-plugin-quick-capture/commit/af7f6ba))
+
+
+
 # :tada: 1.0.0-alpha.0 (2019-12-28)
 
 
